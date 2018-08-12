@@ -1,0 +1,29 @@
+{
+    "name": "cs-eliseev/calculator",
+    "description": "Calculator",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Eliseev Alexey",
+            "email": "a.k.eliseev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "symfony/console": "*"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Calculator\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "": "tests/"
+        }
+    }
+}
