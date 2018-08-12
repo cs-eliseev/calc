@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . DIRECTORY_SEPARATOR . '..' . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+
+use Calculator\MatchCommand;
+use Symfony\Component\Console\Application;
+
+$app = new Application('Console calculator.', 'v1.0.0');
+$app->add(new MatchCommand());
+$app->run();
